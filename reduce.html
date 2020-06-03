@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reduce method</title>
+</head>
+<body style="background-color: #232330; color: bisque;"></body>
+<script>
+    arr = [1,2,3,4,5];
+    // first method
+    function positiveSum(arr) {
+       arr.reduce(
+            function(accu, value) {
+                if (value > 0){
+                    return accu + value
+                }
+                // console.log(array);
+                        
+            }, 0
+        );
+
+        console.log(arr);
+        return arr;
+    }
+// second method
+function positiveSum(arr) {
+    let sum = 0;
+    // check all positive numbers
+    arr.forEach( num => {
+    if(num > 0){
+    console.log(num);
+    // add them all
+    sum = sum + num;
+    
+    }
+    })
+
+return sum;
+}
+
+// how reduce works -Golden rule
+
+[0, 1, 2, 3, 4].reduce(function(accumulator, currentValue, currentIndex, array) {
+  return accumulator + currentValue
+})
+
+
+    </script>
+</body>
+</html>

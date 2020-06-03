@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Remove Char</title>
+  </head>
+  <body style="background-color: #232330; color: bisque;">
+    <script>
+      let str = "eloquent";
+
+      // slice method
+      console.log(str.slice(4, -1));
+
+      // Array method
+
+      let newArr = str.split(""); // turns string to become an array
+      newArr.pop(); // takes out the last element of an array
+      newArr.shift(); // takes out 1st element of an array
+      newArr.join(""); // combines and becomes a string again
+
+      console.log(newArr);
+    </script>
+  </body>
+</html>
