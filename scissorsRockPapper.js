@@ -1,6 +1,6 @@
 // //// same with descriptive names
 
-const rps = (p1, p2) => {
+const rockPaperScissors = (p1, p2) => {
     if (p1 === p2) return "Draw!";
     var rules = {
         rock: "scissors",
